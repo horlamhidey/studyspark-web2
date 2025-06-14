@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StudySpark</title>
+  <title>StudySpark: Make Money with ChatGPT</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,21 +32,42 @@
     button:hover {
       background-color: #1565c0;
     }
+    .buy-button {
+      margin-top: 20px;
+      background-color: #43a047;
+    }
+    .buy-button:hover {
+      background-color: #2e7d32;
+    }
   </style>
 </head>
 <body>
-  <h1>StudySpark</h1>
+  <h1>💸 StudySpark: ChatGPT Money Tips</h1>
   <div class="card" id="flashcard">
     Loading...
   </div>
   <br />
   <button onclick="nextCard()">Next</button>
 
+  <!-- BUY FULL PACK BUTTON -->
+  <p>
+    <a href="https://your-gumroad-link.com" target="_blank">
+      <button class="buy-button">Buy Full Pack for $4.99</button>
+    </a>
+  </p>
+
   <script>
     const flashcards = [
-      "What is the capital of France?<br><b>Answer:</b> Paris",
-      "What is 2 + 2?<br><b>Answer:</b> 4",
-      "What is the boiling point of water?<br><b>Answer:</b> 100°C"
+      "💡 What is a prompt pack?<br><b>Answer:</b> A bundle of useful ChatGPT prompts sold online for passive income.",
+      "💬 How can ChatGPT help in freelancing?<br><b>Answer:</b> You can offer writing, coding, or social media services using ChatGPT as your assistant.",
+      "🧠 What’s a profitable digital product to sell?<br><b>Answer:</b> Prompt packs, eBooks, templates, and Notion tools.",
+      "🤑 Where can you sell your ChatGPT prompt pack?<br><b>Answer:</b> On platforms like Gumroad, Etsy, or Payhip.",
+      "📲 Can you create a mobile app with ChatGPT?<br><b>Answer:</b> Yes! Use low-code tools and ChatGPT to generate the logic.",
+      "📈 What is a micro digital product?<br><b>Answer:</b> A small, valuable product (like a cheat sheet or template) that solves a quick problem.",
+      "⏳ How long does it take to build a prompt pack?<br><b>Answer:</b> With ChatGPT, 1–2 hours or less!",
+      "🎯 What’s a good niche for prompts?<br><b>Answer:</b> AI productivity, side hustles, dating, self-help, or student tools.",
+      "💸 How to monetize a ChatGPT web app?<br><b>Answer:</b> Add a ‘Buy full version’ button linking to your Gumroad product.",
+      "🔥 How much can you make selling prompt packs?<br><b>Answer:</b> Some creators earn $100–$1,000+ per month passively."
     ];
 
     let current = 0;
@@ -57,7 +78,7 @@
       card.innerHTML = flashcards[current];
     }
 
-    // Initialize first card
+    // Show first card
     card.innerHTML = flashcards[0];
   </script>
 </body>
