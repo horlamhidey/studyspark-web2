@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySpark</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f2f2f2;
+    }
+    .card {
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #1976d2;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <h1>StudySpark</h1>
+  <div class="card" id="flashcard">
+    Loading...
+  </div>
+  <br />
+  <button onclick="nextCard()">Next</button>
+
+  <script>
+    const flashcards = [
+      "What is the capital of France?<br><b>Answer:</b> Paris",
+      "What is 2 + 2?<br><b>Answer:</b> 4",
+      "What is the boiling point of water?<br><b>Answer:</b> 100°C"
+    ];
+
+    let current = 0;
+    const card = document.getElementById("flashcard");
+
+    function nextCard() {
+      current = (current + 1) % flashcards.length;
+      card.innerHTML = flashcards[current];
+    }
+
+    // Initialize first card
+    card.innerHTML = flashcards[0];
+  </script>
+</body>
+</html>
